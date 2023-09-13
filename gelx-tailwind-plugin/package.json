@@ -1,0 +1,30 @@
+{
+    "name": "gelx",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "build:components:css": "postcss src/components/index.css -o dist/components.css",
+        "build:components:js": "prejss-cli dist/components.css --format commonjs",
+        "build:components": "npm run build:components:css && npm run build:components:js",
+        "build:utilities:css": "postcss src/utilities/index.css -o dist/utilities.css",
+        "build:utilities:js": "prejss-cli dist/utilities.css --format commonjs",
+        "build:utilities": "npm run build:utilities:css && npm run build:utilities:js",
+        "build": "npm run build:components && npm run build:utilities"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "postcss-cli": "^10.1.0",
+        "postcss-import": "^15.1.0",
+        "postcss-nested": "^6.0.1",
+        "prejss-cli": "^0.3.3",
+        "tailwind": "^4.0.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.15",
+        "postcss": "^8.4.29",
+        "tailwindcss": "^3.3.3"
+    }
+}
