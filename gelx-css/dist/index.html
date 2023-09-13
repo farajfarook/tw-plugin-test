@@ -5,9 +5,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./gelx.css" rel="stylesheet" />
     </head>
-    <body>
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
-        <button class="btn">Button</button>
-        <input type="text" placeholder="input sample" />
+    <body class="m-8">
+        <h1 class="font-bold text-3xl w-full my-4">Manage Approvals</h1>
+        <div class="flex flex-row">
+            <div class="flex flex-col space-y-1">
+                <label class="text-sm">Approval Status</label>
+                <select class="border rounded-lg">
+                    <option>All</option>
+                    <option>My Status</option>
+                    <option>Hello Status</option>
+                </select>
+            </div>
+            <div class="flex-1"></div>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Date raised</th>
+                    <th>Job no.</th>
+                    <th>Job title</th>
+                    <th>Requisitioner</th>
+                    <th>New</th>
+                    <th>Replacement</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-09-01</td>
+                    <td>J12345</td>
+                    <td>Software Developer</td>
+                    <td>John Doe</td>
+                    <td>New</td>
+                    <td>No</td>
+                    <td><button>Edit</button></td>
+                </tr>
+                <tr>
+                    <td>2023-09-02</td>
+                    <td>J23456</td>
+                    <td>Graphic Designer</td>
+                    <td>Jane Smith</td>
+                    <td>New</td>
+                    <td>No</td>
+                    <td><button>Edit</button></td>
+                </tr>
+                <tr>
+                    <td>2023-09-03</td>
+                    <td>J34567</td>
+                    <td>Marketing Manager</td>
+                    <td>Bob Johnson</td>
+                    <td>Replacement</td>
+                    <td>Yes</td>
+                    <td><button>Edit</button></td>
+                </tr>
+                <!-- Repeat this pattern for the remaining rows -->
+            </tbody>
+        </table>
+        <div class="flex flex-row items-center">
+            <div class="flex flex-row items-center">
+                <span>Rows per page</span>
+                <select class="input">
+                    <option>10</option>
+                    <option>20</option>
+                    <option>50</option>
+                </select>
+                <button>X</button>
+            </div>
+            <div class="flex-1"></div>
+            <div class="flex flex-row items-center">
+                <span>1-10 results of 20</span>
+                <button>Prev</button>
+                <button>Next</button>
+            </div>
+        </div>
     </body>
 </html>

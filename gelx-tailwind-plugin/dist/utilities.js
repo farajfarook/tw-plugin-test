@@ -1,1 +1,0 @@
-module.exports = {".flex-center":{"@apply flex items-center justify-center":true}};

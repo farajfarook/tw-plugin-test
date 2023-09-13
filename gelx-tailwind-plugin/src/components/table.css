@@ -1,0 +1,7 @@
+.gelx-table {
+    @apply table;
+}
+
+.gelx-table th {
+    @apply p-4 border-b;
+}
