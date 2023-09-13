@@ -1,0 +1,7 @@
+.input-group {
+    @apply flex flex-col space-y-1;
+}
+
+.input {
+    @apply border rounded-lg border-slate-200  h-12;
+}

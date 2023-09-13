@@ -1,7 +1,14 @@
 .btn {
-    @apply px-2.5 py-1.5;
-    @apply rounded-md shadow-sm;
-    @apply text-sm font-semibold text-white;
-    @apply bg-indigo-600 hover:bg-indigo-500;
-    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+    @apply px-4 py-2 h-12;
+    @apply border rounded-lg border-slate-200;
+}
+
+.btn-icon {
+    @apply flex justify-center items-center;
+}
+
+.btn-link {
+    @apply border-0;
+    @apply font-bold;
+    @apply text-blue-600;
 }

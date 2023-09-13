@@ -1,0 +1,7 @@
+.title {
+    @apply font-bold text-3xl w-full my-4;
+}
+
+.label {
+    @apply text-sm;
+}
